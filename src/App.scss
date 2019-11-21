@@ -1,9 +1,17 @@
+@charset "utf-8";
+@import "./variables.scss";
+@import "~bulma/bulma.sass";
+
 .App {
   text-align: center;
 }
 
 .App-logo {
   height: 40vmin;
+}
+
+.button {
+  margin-right: 1rem;
 }
 
 .App-header {
