@@ -15,7 +15,6 @@ async function getBatch() {
     cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
     redirect: "follow", // manual, *follow, error
     referrer: "no-referrer", // no-referrer, *client
-    credentials: "include"
   });
   if (!res.ok) {
     throw Error(res.statusText);
@@ -30,7 +29,6 @@ async function postBatch(batch) {
     cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
     redirect: "follow", // manual, *follow, error
     referrer: "no-referrer", // no-referrer, *client
-    credentials: "include",
     body: JSON.stringify(batch)
   });
   if (!res.ok) {
